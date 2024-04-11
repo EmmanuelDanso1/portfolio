@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio_Project</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init("nO4hNpf6PITriXz8A");
+    })();
+    </script>
+    <script src="https://kit.fontawesome.com/68c69f483e.js" crossorigin="anonymous"></script>
+    <style>
+        .error {
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="container">
+        <nav>
+            <a href="#home"><h3>PORTFOLIO</h3></a>
+            <ul id="side-menu">
+                <li><a href="#About">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- added hamburger and close icon -->
+                <i class="fas fa-times" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="container-header-text">
+            <div class="text">
+                <h3>Hello, It's me,</h3>
+                <h2>Emmanuel Danso</h2>
+                <h3>A Web Developer</h3>
+                <p>As a Web Developer, solving complex tech problems to enhance <br>technology has always been my goal</p>
+            </div>
+            <div class="logo">
+                <img src="images/IMG_4921.jpg" alt="profile" srcset="">
+            </div>
+        </div>
+    </div>
+    <!-- About me -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-me"><h1>About Me</h1></div>
+                <p>Emmaniel Danso is a diligent and a hardworking individual who is passionate about tech and always wants to solve problems for people.<br>
+                    I hold a bachelors degree in Physics with Computer Science from the University of Ghana.<br>
+                    My skillset includes building websites to enhance technology and thinking through problems with the aim of solving it <br>
+                    I firmly believe that with continous learning, adaptabiliy and consistency which are the keys to success as technology evolves.
+                </p>
+                <!-- some experience and skill set -->
+                <div class="title_set">
+                    <div class="title_desc active" onclick="setTitle('skills')">Skills</div>
+                    <div class="title_desc" onclick="setTitle('experience')">Experience</div>
+                    <div class="title_desc" onclick="setTitle('education')">Education</div>
+
+                </div>
+                <div class="title_set_content first_content" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Designing Web application</li><br>
+                        <li><span>Programming Skills</span><br>PHP | Python(Flask, Django) | Javascript <br> Bootstrap | MySQL | API <br>Docker | HTML5 | CSS3 | Git and Github</li>
+                    </ul>
+                </div>
+                <div class="title_set_content" id="experience">
+                    <ul>
+                        <li><span>Team Leader </span><br> GRA- Property rate and funds mobilization</li><br>
+                        <li><span>ID Card validation and Issuance </span><br> National Identification Authority</li><br>
+                        <li><span>Management Information System </span><br> Akuapem South Municipal Assembly</li><br>
+                        <li><span>Backend Software Engineer</span><br>Odeen Microsystems LLC</li>
+                    </ul>
+                </div>
+                <div class="title_set_content" id="education">
+                    <ul>
+                        <li><span>Aug 2017- Nov 2021 </span><br> University of Ghana</li><br>
+                        <li><span>Sept 2013- May 2016 </span><br> Aburi Presby SHTS</li><br>
+                        <li><span>Sept 2010- June 2013 </span><br> P.W.C.E Demonstration School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-project">Projects</h1>
+            <div class="projects_list">
+                <div class="project">
+                    <img src="images/Screenshot (41).png" alt="" srcset="">
+                    <div class="project_flow">
+                        <h3>E-commerce</h3>
+                        <p>Get Your Products Here</p>
+                        <a href="https://github.com/EmmanuelDanso1/e-commerce" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"> </i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/IMG_7777.jpg" alt="" srcset="">
+                    <div class="project_flow">
+                        <h3>Stop Watch</h3>
+                        <p>A stop watch to time yourself</p>
+                        <a href="https://github.com/EmmanuelDanso1/frontend_projects/tree/main/Stopwatch" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"> </i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/IMG_7785.jpg" alt="" srcset="">
+                    <div class="project_flow">
+                        <h3>Image Search Site</h3>
+                        <p>Search and download any image for yourself</p>
+                        <a href="https://github.com/EmmanuelDanso1/frontend_projects/tree/main/Image_Search_app" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"> </i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/EmmanuelDanso1/"  target="_blank" class="btn">More Projects</a>
+        </div>
+        
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row_contact">
+                <div class="contact_left">
+                    <h1>Contact Me</h1>
+                    <!-- using icons from font awesome -->
+                    <p ><i class="fas fa-paper-plane"> </i>kwekudanso21@gmail.com</p>
+                    <p>  <i class="fas fa-phone-square"></i>+233544638351</p>
+                    <div class="social-media-icons">
+                        <a href="https://www.linkedin.com/in/emmanuel-danso-862566249/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/EmmanuelDanso1/" target="_blank"><i class="fab fa-github" ></i></a>
+                        <a href="https://www.twitter.com/BraEmma84/" target="_blank"><i class="fa-brands fa-x-twitter" ></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact_right">
+                    <form id="contact-form"  method="post" onsubmit="return validateForm()">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Type your name"><br>
+                        <span id="name-error" class="error"></span><br><br>
+                
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Type your email"><br>
+                        <span id="email-error" class="error"></span><br><br>
+                
+                        <label for="message">Message:</label>
+                        <textarea id="message" rows="7" name="message" placeholder="Type your message"></textarea><br>
+                        <span id="message-error" class="error"></span><br><br>
+                
+                        <input type="submit" class="btn-submit" onclick="sendMail()" value="Submit">
+                        <p id="success-message" class="success" style="display: none;"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <script src="index.js"></script>
+</body>
+</html>
